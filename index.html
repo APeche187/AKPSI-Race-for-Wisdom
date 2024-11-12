@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="src/style.css" />
+	</head>
+	<body>
+		<div id="start-screen">
+			<h1>AKPSI Race for Wisdom!</h1>
+			<p>Test your knowledge about Alpha Kappa Psi. Are you ready to begin?</p>
+			<h1>Select Your Car</h1>
+			<div id="car-selection">
+				<select id="car-dropdown">
+					<option value="car-blue" data-image="./assets/blue_car.png">Blue Car</option>
+					<option value="car-red" data-image="./assets/red_car.png">Red Car</option>
+					<option value="car-yellow" data-image="./assets/yellow_car.png">Yellow Car</option>
+					<option value="car-white" data-image="./assets/white_car.png">White Car</option>
+				</select>
+				<img id="car-preview" src="assets/blue_car.png" alt="Selected Car Preview" />
+			</div>
+			<button id="start-btn">Start Quiz</button>
+		</div>
+		<div id="game-container" class="hidden">
+			<div id="track">
+				<div class="car" id="car-red"></div>
+				<div class="car" id="car-blue"></div>
+				<div class="car" id="car-yellow"></div>
+				<div class="car" id="car-white"></div>
+			</div>
+			<br />
+			<div id="info-container">
+				<div id="curr-question"></div>
+			</div>
+		</div>
+		<div id="end-screen" class="hidden"></div>
+
+		<script src="./src/script.js"></script>
+	</body>
+</html>
